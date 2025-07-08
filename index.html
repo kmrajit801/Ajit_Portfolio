@@ -1,0 +1,142 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ajit Kumar | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 3rem;
+    }
+    .profile-pic {
+      display: block;
+      max-width: 200px;
+      margin: 2rem auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .skills-bar {
+      margin: 1rem 0;
+    }
+    .bar {
+      background: #ccc;
+      border-radius: 25px;
+      overflow: hidden;
+    }
+    .bar-fill {
+      height: 20px;
+      background: #007bff;
+      width: 0;
+      transition: width 2s;
+    }
+    .experience, .projects, .certifications {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-top: 2rem;
+      padding: 2rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #222;
+      color: #fff;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body onload="animateBars()">
+  <header>
+    <h1>Ajit Kumar</h1>
+    <p>Technical & Soft Skill Trainer | Robotics | PLC | Data Analytics</p>
+  </header>  <img src="images/profile.jpg" alt="Ajit Kumar" class="profile-pic">  <section>
+    <h2>Profile</h2>
+    <p>With a decade immersed in soft skills and technical training, I specialize in robotics, PLC programming, instrumentation, and empowering individuals with communication and leadership skills.</p>
+  </section>  <section>
+    <h2>Skills</h2>
+    <div class="skills-bar">
+      <p>Team Work</p>
+      <div class="bar"><div class="bar-fill" style="width: 100%;"></div></div>
+      <p>Quality Control</p>
+      <div class="bar"><div class="bar-fill" style="width: 100%;"></div></div>
+      <p>Problem Solving</p>
+      <div class="bar"><div class="bar-fill" style="width: 90%;"></div></div>
+      <p>Decision Making</p>
+      <div class="bar"><div class="bar-fill" style="width: 95%;"></div></div>
+      <p>Empathy</p>
+      <div class="bar"><div class="bar-fill" style="width: 100%;"></div></div>
+    </div>
+  </section>  <section class="experience">
+    <h2>Work Experience</h2>
+    <h3>Technical & Soft Skill Trainer (2015 - Present)</h3>
+    <p>Edutech NTTF India, Jamshedpur</p>
+    <ul>
+      <li>Training in Robotics, PLC, VFD, and sensors</li>
+      <li>Developing engaging training modules</li>
+      <li>Mentoring trainees and fostering growth</li>
+    </ul><h3>Validation Engineer (2011 - 2014)</h3>
+<p>LG Soft India, Bangalore</p>
+<ul>
+  <li>Manual & regression testing of mobile software</li>
+  <li>Defect tracking and resolution</li>
+  <li>Test automation scripting</li>
+</ul>
+
+  </section>  <section class="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Smart Mirror</li>
+      <li>Fully Automated Office Environment</li>
+      <li>Hybrid Energy Generation</li>
+      <li>Automatic Water Generator</li>
+      <li>Tidal Wave Energy</li>
+    </ul>
+  </section>  <section class="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Master Program in Data Analytics - SimpliLearn</li>
+      <li>Certified Employability Trainer - Wadhwani Foundation</li>
+      <li>Artificial Intelligence & Machine Learning - Edux Labs</li>
+      <li>Python Programming - SimpliLearn</li>
+    </ul>
+  </section>  <footer>
+    <p>Contact: <a href="mailto:kmr.ajit2389@gmail.com" style="color:#fff">kmr.ajit2389@gmail.com</a> | +91 9241739997</p>
+    <p>Connect on <a href="https://linkedin.com/in/ajitkumar801" target="_blank" style="color:#fff">LinkedIn</a></p>
+  </footer>  <script>
+    function animateBars() {
+      const bars = document.querySelectorAll('.bar-fill');
+      bars.forEach(bar => {
+        const width = bar.style.width;
+        bar.style.width = '0';
+        setTimeout(() => bar.style.width = width, 500);
+      });
+    }
+  </script></body>
+</html>
